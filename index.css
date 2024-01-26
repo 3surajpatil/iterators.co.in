@@ -1,0 +1,214 @@
+
+html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%; 
+  margin: 0px;
+    
+}
+
+.mainContainer
+{
+    background-color: white;         
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /*overflow-y: scroll;*/
+}
+      
+
+.headerContainer 
+{
+    background-color: darkslategray;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);                    
+}
+
+
+.contentContainer
+{
+    background-color: white;
+    margin: 15px 0 ;    
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);           
+    
+}
+
+@media(min-width: 900px){
+    
+    .contentContainer{
+    
+   	display: flex;    
+    /*align-items: stretch;    */
+    }
+    
+   .leftContentContainer{
+        margin-right: 5px;
+        /* when menu will be increase scroll will be added */
+        height: 650px;
+        overflow-y: auto;        
+    }
+    
+    .middleContentContainer{
+        margin-right: 5px;
+        
+        /*when middleContent size increased scroll will get added.*/
+        height: 650px;
+        overflow-y: auto;         
+    }
+    
+}
+
+
+.leftContentContainer
+{
+    background-color: white;
+    flex: 1;        
+    order: 1;
+    padding-left: 0px;
+    box-sizing: border-box;   
+    flex-shrink: 0; /*avoids content shrinking on small browser window.*/		
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);    
+}
+
+
+.leftContentContainer ul{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);    
+    flex-direction: column;
+    /*overflow-y: auto;*/
+    flex-shrink: 0;
+}
+.leftContentContainer ul li{
+        
+    text-align:left;
+    padding: 5px 5px;
+    list-style-type:none;
+   
+    background-color:#f1f1f1;
+    overflow:auto
+}
+
+.leftContentContainer ul li:hover{
+    background-color: lightgray;
+}
+.leftContentContainer ul li a{
+    text-decoration: none;
+}
+
+.middleContentContainer
+{
+    background-color: white;
+     flex: 6; 
+    /*flex-basis: 74%;*/
+    order: 2;
+    padding-left: 5px;   
+    box-sizing: border-box;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    /*flex-grow: 1; */ /*ensures that the container will take up the full height of the parent container*/
+    overflow-y: auto;  /*adds scroll to this container*/
+}
+
+.rightContentContainer
+{
+    
+    background-color: white;
+     flex: 1;
+    /*flex-basis: 12%;*/
+    order: 3;
+    box-sizing: border-box;     
+    padding-left: 10px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    /* overflow-y: auto; */ 
+}
+
+
+
+.footerContainer
+{    
+    background-color: darkslategray;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+table, th, td{
+    align-content: center;
+    border: 1px solid black;
+}
+.xmlCode{
+    margin-left: 5px;
+    border-left: 4px solid #ADFF2F;   
+    border-right : 1px solid #ADFF2F;
+    border-bottom : 1px solid #ADFF2F;
+    border-top : 1px solid #ADFF2F;
+    font-size: 15px;
+    font-family: "monospace","courier new";
+    color: blue;
+    white-space: pre;
+    line-height: 1.5;
+    overflow-x: scroll;
+}
+
+.javaCode{
+    margin-left: 5px;
+    border-left: 4px solid #ADFF2F;
+    border-right : 1px solid #ADFF2F;
+    border-bottom : 1px solid #ADFF2F;
+    border-top : 1px solid #ADFF2F;
+    font-size: 15px;
+    font-family: "monospace","courier new";
+    color: blue;
+    white-space: pre;   
+    padding-left: 8px;
+    line-height: 1.5;  
+    overflow-x: scroll;  	
+}
+
+.imageDiv{
+    border: 1px solid black;
+    overflow-x: scroll;
+}
+
+#indexMenu{
+    background-color: powderblue;
+}
+in
+body{
+    font-size: 14px;
+    font-family: serif;
+}
+
+
+#indexMenu li{
+display: inline;
+margin: 20px;
+ 
+}
+
+
+h1{
+   text-align: left;
+   padding-left: 8px;        
+   color: black!important;
+   background-color: #78C1E5;
+    
+}
+
+h2 h3 h4 h5 h6{
+text-align: left;
+background-color: #ACFD;
+}
+
+
+
+body {
+font-family: Arial;
+
+}
+
+
