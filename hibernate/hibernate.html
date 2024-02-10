@@ -10,7 +10,7 @@
 <div class="mainContainer w3-container">
 
 <header class="w3-container  w3-teal headerContainer">
-  <h2>Tutorial Campus....!</h2>
+  <h2>Welcome To Iterators.co.in</h2>
 </header>
     
     
@@ -26,16 +26,16 @@
 <div class="contentContainer">
     <div class="leftContentContainer">
        <ul>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#SRCrud">S.R.CRUD</a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#BRoperations">B.R.Operations</a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#hbmappings">Mappings</a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#hbcache">Cache</a></li>           
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#versioning">Versioning</a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#idgeneration">Identity Algorithms</a></li>           
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#HBPOJO_lifeCycle">HB Pojo </a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#Schema_Tools">Schema Tools</a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#HBConnectionPool">Connection Pooling</a></li>
-           <li><a href="http://www.tcampus.in/hibernate/hibernate.html#hbfiler">Filter</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#SRCrud">S.R.CRUD</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#BRoperations">B.R.Operations</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#hbmappings">Mappings</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#hbcache">Cache</a></li>           
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#versioning">Versioning</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#idgeneration">Identity Algorithms</a></li>           
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#HBPOJO_lifeCycle">HB Pojo </a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#Schema_Tools">Schema Tools</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#HBConnectionPool">Connection Pooling</a></li>
+           <li><a href="http://https://iterators.co.in/hibernate/hibernate.html#hbfiler">Filter</a></li>
         </ul>
     </div>   
     <div class="middleContentContainer">
@@ -127,7 +127,7 @@ add below maven dependency to your new Hibernate project's pom.xml file. i am go
 lets create a pojo class.
 
         <div class="javaCode">
-        package in.tcampus.model;
+        package in.co.iterators.model;
 
 import java.io.Serializable;
 
@@ -198,7 +198,7 @@ please place below xml files in src directory. i.e. above all packages.
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"&gt; 
 
 &lt;hibernate-mapping&gt;
-   &lt;class name = "in.tcampus.model.User" table = "User"&gt;
+   &lt;class name = "in.co.iterators.model.User" table = "User"&gt;
       
       &lt;id name = "id" type = "int" column = "id"&gt;
          &lt;generator class="native"/&gt;
@@ -218,7 +218,7 @@ please place below xml files in src directory. i.e. above all packages.
         
         <b>Save a record.</b>
 <div class="javaCode">
-    package in.tcampus;
+    package in.co.iterators;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -229,7 +229,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-import in.tcampus.model.User;
+import in.co.iterators.model.User;
 
 public class Application {
 
@@ -266,7 +266,7 @@ in case if you don't want xml configurations , go for annotation configurations.
 User.java<br>
     <div class="javaCode">
         
-        package in.tcampus.model;
+        package in.co.iterators.model;
 
 import java.io.Serializable;
 
@@ -387,7 +387,7 @@ public class User implements Serializable{
       &lt;!-- List of XML mapping files --&gt;      
       &lt;!--  &lt;mapping resource = "User.hbm.xml"/&gt; 
 	  commented to use annotation configurations.--&gt;
-      &lt;mapping class="in.tcampus.model.User"&gt;&lt;/mapping&gt;          
+      &lt;mapping class="in.co.iterators.model.User"&gt;&lt;/mapping&gt;          
    &lt;/session-factory&gt;
 &lt;/hibernate-configuration&gt;
         
@@ -1562,8 +1562,8 @@ hibernate.cfg.xml
         &lt;property name="connection.driver_class"&gt;com.mysql.jdbc.Driver&lt;/property&gt; 
         &lt;property name="show_sql"&gt;true&lt;/property&gt;  
           
-        &lt;mapping class="in.tcampus.model.Student"/&gt;  
-        &lt;mapping class="in.tcampus.model.Phone"/&gt;  
+        &lt;mapping class="in.co.iterators.model.Student"/&gt;  
+        &lt;mapping class="in.co.iterators.model.Phone"/&gt;  
           
     &lt;/session-factory&gt;  
   
@@ -1574,7 +1574,7 @@ hibernate.cfg.xml
 Student.java
 
 <div class="javaCode"> 
- package in.tcampus.model;
+ package in.co.iterators.model;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -1643,7 +1643,7 @@ public class Student {
  Phone.java
 
 <div class="javaCode">
-package in.tcampus.model;
+package in.co.iterators.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -1702,7 +1702,7 @@ public class Phone {
 App.java
 
 <div class="javaCode">
-package in.tcampus;
+package in.co.iterators;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -1711,9 +1711,9 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import in.tcampus.model.Phone;
-import in.tcampus.model.Student;
-import in.tcampus.util.HibernateUtil;
+import in.co.iterators.model.Phone;
+import in.co.iterators.model.Student;
+import in.co.iterators.util.HibernateUtil;
 
 public class App {
 
@@ -1746,7 +1746,7 @@ public class App {
         <b>Note:-&gt; to avoid configuration for session factory each time . created this utility class.</b><br>
 HibernateUtil.java 
 <div class="javaCode"> 
-package in.tcampus.util;
+package in.co.iterators.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -1840,8 +1840,8 @@ public class Course {
  
  hibernate.cfg.xml
  <div class="xmlCode">
-    &lt;mapping class="in.tcampus.model.Student"/&gt;  
-    &lt;mapping class="in.tcampus.model.Course"/&gt;  
+    &lt;mapping class="in.co.iterators.model.Student"/&gt;  
+    &lt;mapping class="in.co.iterators.model.Course"/&gt;  
 </div>
 
  <b>Note:-&gt; HibernateUtil can be found in above One to Many example. </b>
@@ -2280,11 +2280,11 @@ public class App {
 <footer class="w3-container w3-teal footerContainer">
   <p>
 Java and other tutorials</span>
-<a xmlns:cc="http://creativecommons.org/ns#" href="www.tcampus.in" property="cc:attributionName" rel="cc:attributionURL"></a>
+<a xmlns:cc="http://creativecommons.org/ns#" href="https://iterators.co.in" property="cc:attributionName" rel="cc:attributionURL"></a>
 is licensed under a  
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> 
-<br>for suggestions please text me on <b>suraj.patil@tcampus.in</b>
+<br>for suggestions please text me on <b>suraj.srj.patil@gmail.com</b>
 </p>
 </footer>
 </div>
